@@ -1,5 +1,5 @@
-import css from "./Data.module.css";
-import PropTypes from "prop-types";
+import css from './Statistics.module.css';
+import PropTypes from 'prop-types';
 
 const Data = ({ title, stats }) => (
   <section className={css.statistics}>
@@ -11,9 +11,7 @@ const Data = ({ title, stats }) => (
           className={css.item}
           key={id}
           style={{
-            backgroundColor:
-              "#" +
-              (0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6),
+            backgroundColor: getRandomHexColor(),
           }}
         >
           <span className={css.label}>{label}</span>
@@ -23,6 +21,10 @@ const Data = ({ title, stats }) => (
     </ul>
   </section>
 );
+
+function getRandomHexColor() {
+  return `#${(0x1000000 + Math.random() * 0xffffff).toString(16).substr(1, 6)}`;
+}
 
 Data.propTypes = {
   title: PropTypes.string,

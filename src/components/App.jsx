@@ -1,8 +1,8 @@
 
-import User from "./User/User";
+import User from "./Profile/Profile";
 import user from "../Json/user.json";
 
-import Data from "./Data/Data";
+import Data from "./Statistics/Statistics";
 import data from "../Json/data.json";
 
 import FriendList from "./FriendList/FriendList";

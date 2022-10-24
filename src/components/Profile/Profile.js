@@ -1,5 +1,5 @@
-import css from "./User.module.css";
-import PropTypes from "prop-types";
+import css from './Profile.module.css';
+import PropTypes from 'prop-types';
 
 const User = ({ username, tag, location, avatar, stats }) => (
   <div className={css.profile}>
