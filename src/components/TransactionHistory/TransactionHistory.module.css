@@ -1,0 +1,42 @@
+.transactionHistory{
+    width: 700px;
+    text-align: center;
+    font-weight: 400;
+    border: 1px solid #eaeaea;
+}
+
+
+
+th{
+    font-weight: 300;
+}
+
+td {
+    font-weight: 300;
+    color: rgb(86, 87, 88);
+}
+
+tr {
+    color: white;
+    font-weight: 400;
+    font-size: 14px;
+}
+ 
+
+
+.transactionHistory tr:nth-child(2n) {
+    background-color: #ecf1f4;
+}
+
+.headTable {
+    background-color: #00bcd5;
+}
+
+.transactionHistory th:nth-child(2) {
+    border-left: 1px solid white;
+    border-right: 1px solid white;
+}
+
+.transactionHistory td {
+    border: 1px solid #eaeaea;
+}
